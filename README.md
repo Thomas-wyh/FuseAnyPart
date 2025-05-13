@@ -1,14 +1,20 @@
 # [FuseAnyPart: Diffusion-Driven Facial Parts Swapping via Multiple Reference Images](https://arxiv.org/abs/2410.22771)
 ![FuseAnyPart Overview](assets/demo.png)
 This is an official implementation for "FuseAnyPart: Diffusion-Driven Facial Parts Swapping via Multiple Reference Images"
-## Introduction
+
+## 📣 Updates
+- [x] Release source training and inference code.
+- [ ] Release the model weights.
+
+## 🌅 Introduction
 We propose FuseAnyPart, a novel diffusion-driven method for facial parts
 swapping. FuseAnyPart first extracts multiple decomposed features from face images with masks
 obtained from an open-set detection model. Then parts from different faces are aggregated in latent
 space with the Mask-based Fusion Module. An injection module injects this conditional information
 into UNet for fusing effectively. Extensive experiments validate the superiority of FuseAnyPart.
 ![FuseAnyPart Model Architecture](assets/model.png)
-## Getting Started
+
+## ⚒️ Getting Started
 
 ### installation
 Our code is built on top of the `diffusers` library. To set up the environment and install the required dependencies, follow these steps:
@@ -41,9 +47,16 @@ To start the training process, run the following command:
 ```shell
 bash train.sh
 ```
-## Results
+## 📝 Results
 ![Results](assets/Results.png)
-## Citation
+
+
+## 🙏🏻 Acknowledgements
+We would like to thank the contributors to the [Diffusers](https://github.com/huggingface/diffusers) and [IP-Adapter](https://github.com/tencent-ailab/IP-Adapter) repositories, for their open research and exploration.
+
+
+
+## 📒 Citation
 If you find FuseAnyPart useful for your research and applications, please cite using this BibTeX:
 ```
 @inproceedings{yufuseanypart,
