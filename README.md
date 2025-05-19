@@ -4,7 +4,7 @@ This is an official implementation for "FuseAnyPart: Diffusion-Driven Facial Par
 
 ## 📣 Updates
 - [x] Release source training and inference code.
-- [ ] Release the model weights.
+- [x] Release the model weights.
 
 ## 🌅 Introduction
 We propose FuseAnyPart, a novel diffusion-driven method for facial parts
@@ -27,7 +27,10 @@ pip install -r requirements.txt
 ### Inference
 We provide a detailed python file [inference.py](inference.py) that demonstrates how to perform model inference. You can refer to this file to understand how to use the model and follow the inference process.
 
+The weight file fap.bin is on [HuggingFace](https://huggingface.co/Thomas-Tom/FuseAnyPart).
+
 Before inference, it is necessary to prepare the weights for CLIP and Realistic_Vision_V4 in advance and organize them into the pretrained_weight directory as follows:
+
 
 ```plaintext
 pretrained_weight
